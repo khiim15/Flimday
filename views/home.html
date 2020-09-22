@@ -1,19 +1,24 @@
 <ons-page id="home">
 
-    <h2>Top 10 this month</h2>
-    <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel"  >
-        <ons-carousel-item style="background-image: url('../images/tanet.jpg')">
-         
+  <ons-navigator swipeable id="myNavigator" page="homemovie.html"></ons-navigator>
+  
+  <template id="homemovie.html">
+   
+    <ons-page id="homemovie">
+      
+      <ons-carousel swipeable auto-scroll id="homemovie">
+        <ons-carousel-item modifier="nodivider" id="pic1">
+          <img src="../images/tesla.jpg" width="100%" height="800" />
         </ons-carousel-item>
-        <ons-carousel-item style="background-image: url('../images/tesla.jpg')">
-         
+        <ons-carousel-item modifier="nodivider" id="pic2">
+          <img src="../images/tanet.jpg" width="100%" height="800" />
         </ons-carousel-item>
-        <ons-carousel-item style="background-image: url('../images/blackwidow.jpg')">
-         
+        <ons-carousel-item modifier="nodivider" id="pic3">
+          <img src="../images/blackwidow.jpg" width="100%" height="800" />
         </ons-carousel-item>
-    </ons-carousel>
-
- 
-
-
+      </ons-carousel>
+    
+    </ons-page>
+  
+  </template>
 </ons-page>
