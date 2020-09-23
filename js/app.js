@@ -1,7 +1,7 @@
 document.addEventListener('init', function(event) {
     var page = event.target;
   
-    if (page.id === 'Hmovie') {
+    if (page.id === 'hmovie') {
       page.querySelector('#pic1').onclick = function () {
         document.querySelector('#myNavigator').pushPage('../views/movie1.html')
     }
